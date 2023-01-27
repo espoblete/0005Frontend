@@ -38,6 +38,7 @@ export default function Catalogue() {
     }
   }, [])
 
+  
   return (
     <Container>
       <p>Catálogo de Productos</p>

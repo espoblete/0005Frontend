@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Button, Card } from 'react-bootstrap'
 import ShoppingCartContext from '../../../config/contexts/shopping-cart/ShoppingCartContext'
+import '../Product/product.css'
 
 //para mostrar productos se usa componente card de bootstrap
 const Product = ( props ) => {
@@ -9,6 +10,7 @@ const Product = ( props ) => {
   const { addProduct } = shoppingCartCtx
 
   return (
+    <div className='productos'>
     <Card style={ { width: '18rem' } } key={ product._id }>
       <Card.Img variant="top" src={ product.imagen } height={ 200 } />
       <Card.Body>
@@ -23,6 +25,8 @@ const Product = ( props ) => {
         }
         } >Agregar al carrito</Button>
       </Card.Body>
-    </Card> )
+    </Card>
+    </div>
+     )
 }
 export default Product

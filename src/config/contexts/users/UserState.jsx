@@ -79,7 +79,7 @@ const UserState = ( props ) => {
     }
     try {
 //si está el token, se hace una peticion al backend para obtener la info del usuario
-      const fetchResponse = await fetch( "http://localhost:3001/users/profile", {
+      const fetchResponse = await fetch( "http://localhost:3001/auth/profile", {
         method: 'GET', headers: {
           "Authorization": `Bearer ${ token }`,
           "Content-type": "application/json",
