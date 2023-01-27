@@ -1,0 +1,16 @@
+
+.planilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    font-size: larger;
+    width: 950px;
+    padding: 5px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: #ccc;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 30px;
+}
